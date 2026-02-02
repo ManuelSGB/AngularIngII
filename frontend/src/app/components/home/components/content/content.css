@@ -1,0 +1,49 @@
+.bloque-secudario, .E-Renovable-contenido, .Sugerencias-contenido{
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bloque-secudario .texto{
+    flex: 1 1 50%;
+    width: 300px;
+}
+.bloque-secudario .recuerda{
+    background-color: #2bb5f4;
+    flex: 1 1 50%;
+    width: 300px;
+    max-width: 100%;
+    border-radius: 12%;
+    box-shadow: 0 4px 16px #00000033;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: block;
+}
+
+.bloque-secudario .imagen, .E-Renovable-contenido .imagen, .Sugerencias-contenido .imagen {
+    flex:  1 350px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Contenido E-Renovable (Contenido principal y sub-bloques) */
+.bloque-secudario .imagen img{
+    max-width: 60%;
+}
+
+.E-Renovable{
+    padding: 60px 20px;
+}
+.E-Renovable-contenido .imagen{
+    margin: 30px 0;
+}
+.E-Renovable-contenido .imagen img{
+    max-width: 60%;
+}

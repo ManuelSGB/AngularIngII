@@ -1,0 +1,51 @@
+.calculadora {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.Calculadora-Watts{
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.calculator {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #3bc156;
+    border-radius: 15px;
+    background-color: #ffd95a;
+}
+.calculator input {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    color: #3bc156;
+    border: 1px solid #3bc156;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.calculator button {
+    background-color: #2bb5f4;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    font-size: 18px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.calculator p {
+    color: #000000;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.bloque-secudario .imagen img{
+    max-width: 15%;
+}

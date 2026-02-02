@@ -1,0 +1,8 @@
+ECOWATT VERSION 1.0
+
+La página usada es el proyecto realizado por mi equipo en la materia Ingenieria Web I y es tipo blog, por lo cual en el header encontrará los hipervinculos para las distintas secciones de la página (Inicio, Calculadora, Energía Renovable y Sugerencias), y el direccionamiento a la subpágina Foro.
+
+Aunque en el proyecto original funciona perfectamente la calculadora y el foro, al ser codigo JavaScript nativo aún tengo fallos para implementarlo con Angular que solucionaré pronto.
+
+Lo mismo sucede con el componente "accesibility", el cual es una barra lateral de accesibilidad (contraste de colores y aumento de letra) que aún no consigo implementarlo.
+

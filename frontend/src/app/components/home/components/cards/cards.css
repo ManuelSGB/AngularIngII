@@ -1,0 +1,102 @@
+.Sugerencias{
+    padding: 60px 20px;
+}
+
+.Sugerencias-cocina, 
+.Sugerencias-habitacion, 
+.Sugerencias-bano {
+    background: #ffffff;
+    border-top: 5px solid #3bc156 ;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px #0000001a;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Sugerencias-cocina .texto,
+.Sugerencias-habitacion .texto,
+.Sugerencias-bano .texto {
+    flex: 1 1 400px;
+}
+
+.Sugerencias-cocina .imagen,
+.Sugerencias-habitacion .imagen,
+.Sugerencias-bano .imagen {
+    flex: 1 1 300px; 
+}
+
+.Sugerencias-contenido .imagen img {
+    max-width: 100%;
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contenedor-tarjetas article{
+    background: #ffffff;
+    border-top: 5px solid #3bc156 ;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px #0000001a;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenedor-tarjetas article:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #00000033;
+}
+
+.contenedor-tarjetas img{
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.contenedor-tarjetas figcaption{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contenedor-tarjetas p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contenedor-tarjetas a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #3bc156;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contenedor-tarjetas a:hover {
+  background-color: #2bb5f4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contenedor-tarjetas article {
+        transition: none;
+    }
+}
+
+.contenedor-tarjetas a:focus {
+    outline: 3px solid rgba(59,193,86,0.25);
+    outline-offset: 3px;
+}

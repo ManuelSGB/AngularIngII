@@ -1,0 +1,53 @@
+<section class="calculadora" id="calculadora">
+            <article class="Calculadora-Watts">
+                <div class="texto">
+                    <header class="titulo">
+                        <h2 class="titulo">Calculadora de Watts</h2>
+                    </header>
+                    <p>
+                    La calculadora de watts de electrodomésticos es una herramienta esencial para 
+                    entender cómo cada dispositivo en tu hogar consume energía y cómo eso impacta 
+                    tu factura eléctrica. Conocer el consumo energético de tus electrodomésticos 
+                    te permite tomar decisiones más informadas sobre su uso, lo que puede llevar 
+                    a un ahorro significativo en el consumo de energía y, por ende, en tus costos 
+                    mensuales.
+                    </p>
+                    <p>
+                    Cada electrodoméstico tiene una potencia determinada, medida en watts (W). Esta 
+                    potencia indica la cantidad de energía que utiliza mientras está en funcionamiento. 
+                    Al usar la calculadora de watts, puedes introducir el consumo de energía de un 
+                    electrodoméstico y el tiempo de uso diario o mensual. La herramienta te mostrará 
+                    cuánto consumes en kilovatios-hora (kWh), la unidad con la que generalmente se 
+                    mide el consumo energético en tu factura eléctrica.
+                    </p>
+                </div> <br><br>
+
+                <div class="bloque-secudario">
+                    <div class="texto">
+                        <header class="titulo">
+                        <h2 class="titulo">Uso de calculadora</h2>
+                    </header>
+                    <p>
+                    Para medir el consumo de tus aparatos electrónicos ingresar el voltaje de tu dispositivo
+                    en watt (W) como se muestra en la imagen y registra el tiempo que usas el dispositivo en horas.
+                    </p> <br><br>
+                    <p>
+                    La calculadora te dará dos resultados el primer resultado es el consumo en kilovatio-hora 
+                    (kWh) El segundo resultado es el valor de consumo en pesos del uso del aparato en el tiempo que 
+                    registraste
+                    </p><br>
+                    </div>
+                    <div class="imagen">
+                    <img src="/assets/panel de ejemplo.png" alt="Ejemplo de panel de Watts">
+                    </div>
+                </div>
+                <div class="calculator">
+                    <input type="number" id="numero1" placeholder="Registre los W"> 
+                    <input type="number" id="numero2" placeholder="Horas de uso"> 
+                    <button onclick="realizarCalculo()">consultar consumo</button><br><br>
+                    <p>El consumo eléctrico de este dispositivo es de: <span id="consumo"></span> kWh </p><br><br>
+                    <p>El costo que genera el dispositivo es de: $<span id="costo"></span></p>
+                </div>
+            <script src="./js/calculadora.js"></script>
+            </article>
+</section>
