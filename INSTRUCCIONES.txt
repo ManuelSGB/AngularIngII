@@ -1,4 +1,4 @@
-ECOWATT VERSION 1.0
+ECOWATT VERSION 2.0
 
 La página usada es el proyecto realizado por mi equipo en la materia Ingenieria Web I y es tipo blog, por lo cual en el header encontrará los hipervinculos para las distintas secciones de la página (Inicio, Calculadora, Energía Renovable y Sugerencias), y el direccionamiento a la subpágina Foro.
 
@@ -6,3 +6,10 @@ Aunque en el proyecto original funciona perfectamente la calculadora y el foro, 
 
 Lo mismo sucede con el componente "accesibility", el cual es una barra lateral de accesibilidad (contraste de colores y aumento de letra) que aún no consigo implementarlo.
 
+CORRECCIONES: 
+Agregué login básico e interfaz básica de admin.
+    Existen 2 tipos de usuarios: normal y administrador. El usuario normal debe iniciar sesión al entrar al Foro para tener los permisos de ingresar su comentario. El usuario admin debe iniciar sesión al entrar al Foro para tener los permisos de ver y eliminar los comentarios guardados. 
+    Los datos de los comentarios y los usuarios son "datos quemados".
+    Las credenciales para ingresar son: 
+        Usuario normal: Usuario: usuario / Contraseña: usuario123
+        Administrador: Usuario: admin / Contraseña: admin123

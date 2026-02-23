@@ -1,0 +1,27 @@
+<div class="layout" *ngIf="isAdmin">
+  <main class="forum">
+    <div class="forum-header">
+      <h2>Administración - Comentarios del Foro</h2>
+      <button class="btn-logout" (click)="logout()">Cerrar Sesión</button>
+    </div>
+
+    <div class="admin-info">
+      <p>Total de comentarios: <strong>{{ posts.length }}</strong></p>
+    </div>
+
+    <div *ngIf="posts.length === 0" class="no-posts">
+      <p>No hay comentarios en el foro.</p>
+    </div>
+
+    <ul class="posts" *ngIf="posts.length > 0">
+      <li class="post admin-post" *ngFor="let post of posts">
+        <div class="post-delete">
+          <button class="btn-delete" (click)="deletePost(post.id)">Eliminar</button>
+        </div>
+        <div class="meta"><span class="author">{{ post.author }}</span></div>
+        <p><strong>{{ post.title }}</strong></p>
+        <p>{{ post.message }}</p>
+      </li>
+    </ul>
+  </main>
+</div>

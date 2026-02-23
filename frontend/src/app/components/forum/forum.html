@@ -1,20 +1,48 @@
-<div class="layout">
-        <main class="forum">
-            <h2>Foro</h2>
+<div *ngIf="!isAuthenticated">
+  <!-- Si no está autenticado, mostrar login -->
+  <app-login></app-login>
+</div>
 
-            <form id="postForm" class="post-form" autocomplete="off">
-                <input type="text" id="title" placeholder="Título" required />
-                <textarea id="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
-                <div class="form-row">
-                    <input type="text" id="author" placeholder="Tu nombre (opcional)" />
-                    <button type="submit">Publicar</button>
-                </div>
-            </form>
+<div *ngIf="isAuthenticated && !isAdmin" class="layout">
+  <!-- Si está autenticado como usuario normal, mostrar foro -->
+  <main class="forum">
+    <div class="forum-header">
+      <h2>Foro</h2>
+      <button class="btn-logout" (click)="logout()">Cerrar Sesión</button>
+    </div>
 
-            <ul id="posts" class="posts">
-                <li class="post">
-                    <div class="meta"><span class="author">EcoWatt</span></div>
-                    <p><strong>Bienvenido al foro de EcoWatt. Comparte ideas y resuelve dudas con la comunidad</strong></p>
-                </li>
-            </ul>
-        </main>
+    <form class="post-form" (ngSubmit)="submitPost()">
+      <input 
+        type="text" 
+        [(ngModel)]="newTitle" 
+        name="title"
+        placeholder="Título" 
+        required 
+      />
+      <textarea 
+        [(ngModel)]="newMessage" 
+        name="message"
+        rows="5" 
+        placeholder="Escribe tu mensaje..." 
+        required
+      ></textarea>
+      <div class="form-row">
+        <input 
+          type="text" 
+          [(ngModel)]="newAuthor" 
+          name="author"
+          placeholder="Tu nombre (opcional)" 
+        />
+        <button type="submit">Publicar</button>
+      </div>
+    </form>
+
+    <ul class="posts">
+      <li class="post" *ngFor="let post of posts">
+        <div class="meta"><span class="author">{{ post.author }}</span></div>
+        <p><strong>{{ post.title }}</strong></p>
+        <p>{{ post.message }}</p>
+      </li>
+    </ul>
+  </main>
+</div>
